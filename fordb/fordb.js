@@ -12,7 +12,7 @@ module.exports={
         })},
     addTocart:()=>{
         return new Promise(async (resolve,reject)=>{
-            let productAdd= await db.get().collection('products').find().toArray()
+            const productAdd= await db.get().collection('products').find().toArray()
             resolve(productAdd)
         })
     
